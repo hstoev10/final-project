@@ -7,7 +7,7 @@ from finance_record import Expense, Income
 class FinanceManager:
     def __init__(self):
         self.database = FinanceDatabase()
-        self.statistics = FinanceStatistics()
+        self.statistics = FinanceStatistics(self.database)
         
     
     def run(self):
